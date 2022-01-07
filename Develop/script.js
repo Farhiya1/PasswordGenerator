@@ -3,12 +3,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // Creating generatePaswword function
-function generatePassword(){ prompt ("How many numbers do you want in your password?")
+function generatePassword(){ 
+    prompt ("Password criteria?")
+    prompt ("length of the password")
+    prompt ("character types to include in the password")
+
     // Testing to see if button works
     console.log("This button works!")
 
     /**
-     *  GIVEN I need a new, secure password
+     
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
 WHEN prompted for password criteria
