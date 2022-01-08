@@ -155,3 +155,12 @@ function promptForPasswordLength() {
 // Asking for user to input password based on the condition below.
 function writePassword() {
   promptForPasswordLength();
+
+  // Condition for password set. If not met, it will prompt password lenght until it is.
+  while (passwordLength < 8 || passwordLength > 128) {
+    alert(
+      "Please enter a number between 8 and 128, you entered: " + passwordLength
+    );
+
+    promptForPasswordLength();
+  }
