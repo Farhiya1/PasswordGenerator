@@ -2,19 +2,33 @@
 // This variable targets the generate button id in html line 29. Which refers to the red button. See line 15 on JS.
 var generateBtn = document.querySelector("#generate");
 
+var lowerCase;
+var upperCase;
+var numberChar;
+var specialChar;
+
+function generatePassword() {
+    
+    let number = prompt("Please enter length of password");
+    if ((number <8) || (number> 128)) {
+     alert ("Please enter a number between 8 and 128, you entered: " + number)
+    }
+
+    // return number
+
 // Creating generatePaswword function
-function generatePassword(){ 
-    prompt ("Password criteria?")
-    prompt ("length of the password")
-    prompt ("character types to include in the password")
+function g2eneratePassword(){ 
+  
+     prompt ("length of the password")
+     
+    // prompt ("character types to include in the password")
 
     // Testing to see if button works
     console.log("This button works!")
 
+
     /**
      
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
 WHEN prompted for password criteria
 THEN I select which criteria to include in the password
 WHEN prompted for the length of the password
