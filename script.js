@@ -136,3 +136,14 @@ function generatePassword() {
 
     generatedPassword += numberCharacters[randomNumber];
   }
+
+  // A loop to generate random passwords depending on selected password length and selected characters from users input
+  for (var i = generatedPassword.length; i < parseInt(passwordLength); i++) {
+    var randomNumber = randomNumberGenerator(upperCaseAlphabet.length);
+
+    generatedPassword += availableCharacters[randomNumber];
+  }
+
+  return generatedPassword;
+}
+
