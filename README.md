@@ -51,6 +51,7 @@ To access this project the following links are provided:
 Screenshot of deployed application with initial starter code.
 
 ![Screenshot of deployed appliciation](./images/screenshot1.png)
+![Screenshot of completed application](./images/screenshot2.png)
 
 <!--References-->
 
