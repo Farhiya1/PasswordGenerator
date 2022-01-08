@@ -152,3 +152,4 @@ function promptForPasswordLength() {
   passwordLength = prompt("How long would you like your password to be?");
 }
 
+  promptForPasswordLength();
