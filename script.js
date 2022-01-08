@@ -147,3 +147,8 @@ function generatePassword() {
   return generatedPassword;
 }
 
+// Asking user for password length using a prompt.
+function promptForPasswordLength() {
+  passwordLength = prompt("How long would you like your password to be?");
+}
+
