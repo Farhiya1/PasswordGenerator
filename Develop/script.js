@@ -6,6 +6,9 @@ var lowerCase;
 var upperCase;
 var numberChar;
 var specialChar;
+function randomNumberGenerator(maxNum) {
+  return Math.floor(Math.random() * maxNum);
+}
 
 function generatePassword() {
     
