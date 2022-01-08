@@ -94,3 +94,9 @@ var upperCase;
 var numberChar;
 var specialChar;
 var passwordLength;
+
+// Genrating random characters through formula
+function randomNumberGenerator(maxNum) {
+  return Math.floor(Math.random() * maxNum);
+}
+
