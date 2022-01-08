@@ -104,3 +104,35 @@ function randomNumberGenerator(maxNum) {
 function generatePassword() {
   var availableCharacters = [];
   var generatedPassword = "";
+
+  if (lowerCase) {
+    availableCharacters = availableCharacters.concat(lowerCaseAlphabet);
+
+    var randomNumber = randomNumberGenerator(lowerCaseAlphabet.length);
+
+    generatedPassword += lowerCaseAlphabet[randomNumber];
+  }
+
+  if (upperCase) {
+    availableCharacters = availableCharacters.concat(upperCaseAlphabet);
+
+    var randomNumber = randomNumberGenerator(upperCaseAlphabet.length);
+
+    generatedPassword += upperCaseAlphabet[randomNumber];
+  }
+
+  if (specialChar) {
+    availableCharacters = availableCharacters.concat(specialCharacters);
+
+    var randomNumber = randomNumberGenerator(specialCharacters.length);
+
+    generatedPassword += specialCharacters[randomNumber];
+  }
+
+  if (numberChar) {
+    availableCharacters = availableCharacters.concat(numberCharacters);
+
+    var randomNumber = randomNumberGenerator(numberCharacters.length);
+
+    generatedPassword += numberCharacters[randomNumber];
+  }
