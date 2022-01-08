@@ -88,3 +88,9 @@ var specialCharacters = [
 ];
 var numberCharacters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
+// Variables used for users input to confirm choice of character and to generate password
+var lowerCase;
+var upperCase;
+var numberChar;
+var specialChar;
+var passwordLength;
