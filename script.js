@@ -164,3 +164,21 @@ function writePassword() {
 
     promptForPasswordLength();
   }
+
+  // Asking user to confirm their choices in characters available.
+  lowerCase = confirm(
+    "Would you like to add a lowercase character ? Press ok if 'yes' or cancel if 'no'"
+  );
+
+  upperCase = confirm(
+    "Would you like to add an uppercase character?Press ok if 'yes' or cancel if 'no'"
+  );
+
+  numberChar = confirm(
+    "Would you like to add a number? Press ok if 'yes' or cancel if 'no'"
+  );
+
+  specialChar = confirm(
+    "Would you like to add a special character?Press ok if 'yes' or cancel if 'no'"
+  );
+
