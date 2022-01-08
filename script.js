@@ -182,3 +182,13 @@ function writePassword() {
     "Would you like to add a special character?Press ok if 'yes' or cancel if 'no'"
   );
 
+  // Generating password
+  var password = generatePassword();
+  // This targets the id "password" in html to display password in browser
+  var passwordText = document.querySelector("#password");
+  // This line takes the value from your generated password and plugs it into what is displayed on the screen
+  passwordText.value = password;
+}
+
+// When you click the generate button the writePassword function gets called.
+generateBtn.addEventListener("click", writePassword);
