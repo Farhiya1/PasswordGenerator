@@ -100,3 +100,7 @@ function randomNumberGenerator(maxNum) {
   return Math.floor(Math.random() * maxNum);
 }
 
+// Generating password
+function generatePassword() {
+  var availableCharacters = [];
+  var generatedPassword = "";
